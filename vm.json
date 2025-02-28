@@ -1,0 +1,140 @@
+{
+  "canIpForward": true,
+  "confidentialInstanceConfig": {
+    "enableConfidentialCompute": false
+  },
+  "cpuPlatform": "Intel Haswell",
+  "creationTimestamp": "2025-02-28T07:37:35.081-08:00",
+  "deletionProtection": false,
+  "description": "",
+  "disks": [
+    {
+      "architecture": "X86_64",
+      "guestOsFeatures": [
+        {
+          "type": "UEFI_COMPATIBLE"
+        },
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        },
+        {
+          "type": "GVNIC"
+        },
+        {
+          "type": "SEV_CAPABLE"
+        },
+        {
+          "type": "SEV_LIVE_MIGRATABLE_V2"
+        }
+      ],
+      "type": "PERSISTENT",
+      "licenses": [
+        "projects/debian-cloud/global/licenses/debian-12-bookworm"
+      ],
+      "deviceName": "M23CSA534-Ass2-VM1",
+      "autoDelete": true,
+      "source": "projects/m23csa534-vcc-assignment2/zones/us-east1-b/disks/m23csa534-ass2-vm1",
+      "index": 0,
+      "boot": true,
+      "kind": "compute#attachedDisk",
+      "mode": "READ_WRITE",
+      "interface": "SCSI",
+      "diskSizeGb": "10"
+    }
+  ],
+  "displayDevice": {
+    "enableDisplay": true
+  },
+  "fingerprint": "7VSRbMj1vi0=",
+  "id": "717650649854797521",
+  "keyRevocationActionType": "NONE",
+  "kind": "compute#instance",
+  "labelFingerprint": "42WmSpB8rSM=",
+  "lastStartTimestamp": "2025-02-28T07:37:41.845-08:00",
+  "machineType": "projects/m23csa534-vcc-assignment2/zones/us-east1-b/machineTypes/custom-1-2048-ext",
+  "metadata": {
+    "fingerprint": "jfB4uYCu_hk=",
+    "kind": "compute#metadata",
+    "items": [
+      {
+        "value": "m23csa534:ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO+025Hfb3T8Q2J40nLq8OPCIreQSoYsqlLnBtKDE+RcNXuZdyFiIvcH/Zlfnab0LuScTsf9fqDmqCZ0NmLNerM= google-ssh {\"userName\":\"m23csa534@iitj.ac.in\",\"expireOn\":\"2025-02-28T15:44:14+0000\"}\nm23csa534:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqKhUzvwiRTBJr6NxVH02Q4NL6VZkEuxaY7DuX6t8IfUHKdrLKRnsr72CJ+RlgtSKSL4cexHndwBpaA9w9fSPo5QvvTbNXzKqB0WvUJdN+TYWTJbrR5o6k6OkfnjJWl4mNyvC7/WQLaXXrIqs2AiSsbR157jwgE4Zs4hrH8liYFUSd45rs0EuVvKGX7FyoqyuIq65CiMt8hRNfNCs4moq8fCSVwWagtDPV5v94k2szW/WGUsj7mCDEA8lmjaCSEui+1TKL83GSrnWWK36jD03cW0T8gkFqnXhWl9kUrmn3mmgnXlI1sVnwKgjAtSjnKO2fxaE7eFDzIAVqVY27lgGT google-ssh {\"userName\":\"m23csa534@iitj.ac.in\",\"expireOn\":\"2025-02-28T15:44:24+0000\"}",
+        "key": "ssh-keys"
+      }
+    ]
+  },
+  "name": "m23csa534-ass2-vm1",
+  "networkInterfaces": [
+    {
+      "stackType": "IPV4_ONLY",
+      "name": "nic0",
+      "network": "projects/m23csa534-vcc-assignment2/global/networks/default",
+      "accessConfigs": [
+        {
+          "name": "External NAT",
+          "type": "ONE_TO_ONE_NAT",
+          "natIP": "34.23.23.232",
+          "kind": "compute#accessConfig",
+          "networkTier": "PREMIUM"
+        }
+      ],
+      "subnetwork": "projects/m23csa534-vcc-assignment2/regions/us-east1/subnetworks/default",
+      "networkIP": "10.142.0.2",
+      "fingerprint": "DnALQO81s7U=",
+      "kind": "compute#networkInterface"
+    }
+  ],
+  "reservationAffinity": {
+    "consumeReservationType": "ANY_RESERVATION"
+  },
+  "resourceStatus": {
+    "scheduling": {}
+  },
+  "satisfiesPzi": true,
+  "scheduling": {
+    "onHostMaintenance": "MIGRATE",
+    "provisioningModel": "STANDARD",
+    "automaticRestart": true,
+    "preemptible": false
+  },
+  "selfLink": "projects/m23csa534-vcc-assignment2/zones/us-east1-b/instances/m23csa534-ass2-vm1",
+  "serviceAccounts": [
+    {
+      "email": "103101541191-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ],
+  "shieldedInstanceConfig": {
+    "enableSecureBoot": false,
+    "enableVtpm": true,
+    "enableIntegrityMonitoring": true
+  },
+  "shieldedInstanceIntegrityPolicy": {
+    "updateAutoLearnPolicy": true
+  },
+  "shieldedVmConfig": {
+    "enableSecureBoot": false,
+    "enableVtpm": true,
+    "enableIntegrityMonitoring": true
+  },
+  "shieldedVmIntegrityPolicy": {
+    "updateAutoLearnPolicy": true
+  },
+  "startRestricted": false,
+  "status": "RUNNING",
+  "tags": {
+    "items": [
+      "http-server",
+      "https-server",
+      "lb-health-check"
+    ],
+    "fingerprint": "XTN9W2dqKHc="
+  },
+  "zone": "projects/m23csa534-vcc-assignment2/zones/us-east1-b"
+}
